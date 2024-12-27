@@ -1,0 +1,315 @@
+.navtop{
+
+}
+
+.navdiv{
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: fit-content;
+  
+}
+
+.navleft{
+  justify-content: start;
+}
+.navleft img{
+  height: 40px;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+
+.navmid{
+ display: flex;
+ width: 100%;
+ justify-content: center;
+}
+.navmid input{
+  width: 25%;
+  height: 40px;
+  border-radius: 100px;
+  border: none;
+  text-indent: 20px;
+  font-size: 15px;
+  background-color: rgb(26,24,24);
+  margin-left: 1%;
+  color: white;
+}
+.navmid img{
+  height: 40px;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.navright{
+  justify-content: end;
+}
+
+.navright img{
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 20px;
+}
+
+.butsdiv{
+  width: fit-content;
+  margin-top: 5.5%;
+  margin-left: 15px;
+}
+
+.buts {
+  padding: 8px;
+  border-radius: 20px;
+  border: none;
+  background-color: black;
+  color: white;
+
+  font-size: medium;
+  font-weight: lighter;
+}
+
+.buts:hover {
+  background-color: gray;
+}
+
+.rects{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+}
+
+.albox{
+background-color: black;
+width: 23%;
+height: 60px;
+margin: 1%;
+display: flex;
+
+}
+
+.albim{
+  height: 60px;
+  justify-content: start;
+}
+.albox:hover{
+  background-color: gray;
+}
+
+.albtxtp{
+  margin-left: 6%;
+  margin-top: 6.7%;
+}
+ /* .albtxt{
+  justify-content: end;
+  color: white;
+  top: 33%;
+  right: 50%;
+  width: 20px;
+}  */
+
+
+
+/* 6 Grids */
+
+.made {
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+  margin-left: 20px;
+  width: fit-content;
+}
+
+.made:hover {
+  text-decoration: underline;
+}
+
+.grid6{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+
+.sectt {
+  height: 300px;
+  width: 14.6%;
+  background-color: black;
+  margin: 1%;
+  position: relative;
+  display: flex;
+}
+
+.sectt:hover {
+  background-color: gray;
+}
+
+.albumss {
+ width: 85%;
+ height:60%;
+ margin-left: 7.7%;
+ margin-top: 7.7%;
+
+}
+
+
+.albtxt {
+  left: 8px;
+  color: white;
+  bottom: 30px;
+  width: 90%;
+  position: absolute;
+
+}
+
+
+.navbot {
+  height: fit-content;
+  
+}
+
+.playbardiv {
+  position: fixed;
+  bottom: 0;
+  z-index: 10000;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  padding-bottom: 10px;
+}
+
+.leftplay {
+  display: flex;
+  justify-content: start;
+}
+
+.div15{
+  height: 70px;
+  border-radius: 10px;
+   margin-top: 17px;
+   margin-left: 12px; 
+}
+
+.div16{
+  margin-left: 13px;
+  margin-top: 10px;
+ 
+  
+}
+.likediv{
+  width: fit-content;
+  margin-top: 37px;
+  margin-left: 30px;
+}
+
+.div17{
+  height: 20px;
+}
+
+.title {
+  color: white;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+
+.centreplay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  width: 30%;
+  
+}
+
+
+
+.div18{
+  height:32px;
+  width: 32px;
+  border-radius: 100%;
+}
+
+.music-slider {
+  width: 100%;
+  
+}
+
+.music-slider input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 5px;
+  background: white;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.time {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9rem;
+  flex-direction: row;
+}
+
+.time span {
+  color: white;
+}
+
+
+.rightplay {
+  display: flex;
+  justify-content: end;
+}
+
+/* For Mobile */
+
+@media (max-width: 600px) {
+  .butsdiv {
+   margin-top: 20%;
+   margin-bottom: 2%;
+   margin-left: 2%;
+  }
+
+  .navmid input {
+    width: 60%;
+    margin-left: 5%;
+    text-indent: 1%;
+    
+  }
+
+  .albox {
+    width: 48%;
+  }
+
+  .sectt {
+    width: 31.3%;
+  }
+
+  .centreplay {
+    width: 30%;
+  }
+  .made{
+    margin-left: 2%;
+  }
+
+  .albox:hover,
+  .sectt:hover,
+  .made:hover,
+  .buts:hover,
+  .title:hover {
+    background-color: black;
+    text-decoration: none;
+  }
+}
